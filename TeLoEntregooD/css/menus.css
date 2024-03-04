@@ -1,0 +1,135 @@
+.menu{
+    margin-top: -650px;
+}
+.page_title {
+    padding: 30px 0px;
+}
+.menu h1 {
+    color: #ff8f46;
+    font-weight: 700;
+    line-height: 2;
+    margin-bottom: 0;
+    position: relative;
+    text-transform: capitalize;
+    
+}
+.menu h1::before {
+    background: #ff8f46;
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    content: '';
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.menu h1::after {
+    position: absolute;
+    content: '';
+    background: #fbc531;
+    width: 30px;
+    height: 2px;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.single_menu {
+    position: relative;
+    margin-bottom: 75px;
+    transition: .3s;
+}
+.single_menu:hover img{
+    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 100%, 0% 100%);
+}
+img {
+    width: 33%;
+    position: absolute;
+    height: 140px;
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    transition: .5s;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+.menu_content {
+    padding-left: 220px;
+}
+h4 {
+    font-size: 25px;
+    /*font-weight: 300;*/
+    border-bottom: 1px dashed #ff8f46;
+    line-height: 2;
+    text-transform: capitalize;
+}
+h4 span {
+    font-size: 25px;
+    font-weight: 800;
+    float: right;
+    font-style: italic;
+    color: #ff8f46;
+}
+p {
+    font-size: 16px;
+}
+input {
+    width: 40px;
+    text-align: center;
+}
+.buttons2{
+    background-color: #ff8f46;
+}
+.number{
+    background-color: #e9792f;
+    float: right;
+    border: solid 2px;
+}
+.b{
+    background-color: #e9792f;
+    border: solid 2px;
+    width: 75px;
+    height: 30px;
+    float: right;
+    margin-top: -30px;
+    font-size: 13px;
+}
+@media only screen and (max-width:1100px) {
+    .menu{
+        display: block;
+        margin-left: -50px;
+    }
+    .image{
+        display: block;
+    }
+    .b{
+        margin-top: -10px;
+    }
+    .menu_content{
+        padding-left: 160px;
+    }
+    img{
+        width:44% ;
+        height: 150px;
+    }
+}
+@media only screen and (max-width:770px) {
+    .menu{
+        display: block;
+       
+    }
+    .image{
+        display: block;
+    }
+    .b{
+        margin-top: -10px;
+    }
+    .menu_content{
+        padding-left: 220px;
+    }
+    img{
+        width:33% ;
+        height: 150px;
+    }
+}

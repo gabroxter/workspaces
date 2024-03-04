@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(#141e30, #ff8f46);
+}
+#inicio{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #ff8f46;
+}
+#inicio header{
+    width: 100%;
+    background-color:rgb(32, 30, 28);
+}
+.textHeader{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+    /*margin-bottom: -10px;*/
+    
+}
+nav{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+.title{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ff8f46;
+    margin-top: -10px;
+    font-weight: bold;
+    
+}
+#inicio header .textHeader nav ul li{
+    text-align: center;
+}
+#inicio header .textHeader nav ul li i{
+    display: block;
+    color: #fff;
+    margin-bottom: 10px;
+}
+#inicio header .textHeader nav ul li a{
+    display: block;
+    text-decoration: none;
+    color:#a8a8a8;
+    margin: 0px 20px;
+    
+}
+#inicio header .textHeader nav ul li:hover i{
+    color: #ff8f46;
+}
+#inicio header .textHeader .buttons a{
+    display: inline-block;
+    background-color: #ff8f46;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+#inicio header .textHeader .buttons > i{
+    display: inline-block;
+    color: #a8a8a8;
+    margin-left: 10px;
+}
+
+.nav-responsive{
+    display: none;
+    font-size: 25px;
+    color: #a8a8a8;
+}
+
+
+
+
+.text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color:#fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+.images{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+
+
+
+h2{
+    padding: 90px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: -60px;
+    margin-top: 60px;
+}
+.row1{
+    display: flex;
+    width: 1100px;
+    margin: auto;
+}
+.item{
+    display: flex;
+    align-items:center;
+    font-size: 15px;
+    margin: auto;
+}
+.item:hover{
+    background-color:#ff8f46;
+}
+.icons
+{
+    width: 80px;
+    margin-right: 5px;
+}
+button
+{
+    background: none;
+    border: none;
+}
+h3
+{
+    font-size: 25px;
+}
+
+
+
+
+
+
+.data
+{
+    text-align: justify;
+    padding: 50px;
+}
+
+#footpage{
+    background-color: black;
+    padding: 50px;
+}
+.content{
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+    display: block;
+    margin-bottom: 5px;
+}
+a:hover{
+    color:#ff8f46;
+}
+
+
+
+
+
+
+@media only screen and (max-width:1070px) {
+    #inicio header .textHeader .buttons{
+        display: none;
+    }
+    #inicio header .textHeader nav{
+        position: static;
+        transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    html, body {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+    #comidas .row1{
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+    #inicio header .textHeader nav{
+        position: initial;
+        display: none;
+        transform: translate(0);
+        width: 100%;
+        height: 100%;
+    }
+    body{
+        padding: 0%;
+    }
+    
+    #Conocenos .data{
+        display: block;
+        width: auto;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    #inicio header .textHeader{
+        padding: 20px;
+    }
+    #inicio header .textHeader nav.responsive{
+        display: block;
+        position:absolute;
+        left: 0;
+        right: 0;
+        top: 70px;
+        width: 100%;
+        height: 100vh;
+        background-color: #252A2E;
+        z-index: 99;
+    }
+    ul{
+        display: block !important;
+    }
+    li{
+        border-bottom: 1px solid #fff;
+        padding: 0 0;
+    }
+
+    #footpage .content{
+        display: block;
+        text-align: center;
+    }
+    #footpage .content h3{
+        margin: 0px 0 0px 0;
+    }
+    #footpage .content {
+        display: block;
+    }
+    #footpage .content{
+        width: 90%;
+    }
+}
